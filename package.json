@@ -1,7 +1,7 @@
 {
   "name": "ionic-audio",
-  "version": "3.2.2",
-  "description": "An audio player for Ionic 3 and Angular 5",
+  "version": "4.0.0",
+  "description": "An audio player for Ionic 4 and Angular 6",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
   "scripts": {
@@ -9,25 +9,32 @@
     "release": "npm run build && npm publish",
     "test": "cd demo && npm uninstall ionic-audio && cd.. && npm run build && cd demo && npm install ionic-audio && ionic serve"
   },
-  "devDependencies": {
-    "@angular/common": "5.0.0",
-    "@angular/compiler": "5.0.0",
-    "@angular/compiler-cli": "5.0.0",
-    "@angular/core": "5.0.0",
-    "@angular/forms": "5.0.0",
-    "@angular/http": "5.0.0",
-    "@angular/platform-browser": "5.0.0",
-    "@angular/platform-browser-dynamic": "5.0.0",
-    "ionic-angular": "3.9.2",
-    "rxjs": "5.5.2",
-    "sw-toolbox": "3.6.0",
-    "zone.js": "0.8.18",
-    "typescript" : "2.4.2",
+  "dependencies": {
+    "@angular/common": "~8.1.2",
+    "@angular/core": "~8.1.2",
+    "@angular/forms": "~8.1.2",
+    "@angular/platform-browser": "~8.1.2",
+    "@angular/platform-browser-dynamic": "~8.1.2",
+    "@angular/router": "~8.1.2",
+    "@ionic/angular": "^4.7.1",
+    "rxjs": "~6.5.1",
+    "zone.js": "0.9.1",
+    "typescript": "3.4.3",
     "copyfiles": "^1.2.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/architect": "~0.801.2",
+    "@angular-devkit/build-angular": "~0.801.2",
+    "@angular-devkit/core": "~8.1.2",
+    "@angular-devkit/schematics": "~8.1.2",
+    "@angular/cli": "~8.1.2",
+    "@angular/compiler": "~8.1.2",
+    "@angular/compiler-cli": "~8.1.2",
+    "@angular/language-service": "~8.1.2"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arielfaur/ionic-audio.git"
+    "url": "git+https://github.com/the-veloper/ionic-audio.git"
   },
   "keywords": [
     "ionic",
@@ -36,10 +43,10 @@
     "player",
     "typescript"
   ],
-  "author": "Ariel Faur",
+  "author": "Georgi Georgiev",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/arielfaur/ionic-audio/issues"
+    "url": "https://github.com/the-veloper/ionic-audio/issues"
   },
-  "homepage": "https://github.com/arielfaur/ionic-audio#readme"
+  "homepage": "https://github.com/the-veloper/ionic-audio#readme"
 }

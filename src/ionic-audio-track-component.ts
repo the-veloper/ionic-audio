@@ -53,6 +53,22 @@ export class AudioTrackComponent implements OnChanges, DoCheck {
    */
   @Output() onFinish = new EventEmitter<ITrackConstraint>();
 
+  /**
+   * Output property expects an event handler to be notified whenever playback pauses
+   *
+   * @property onPause
+   * @type {EventEmitter}
+   */
+  @Output() onPause = new EventEmitter<ITrackConstraint>();
+
+  /**
+   * Output property expects an event handler to be notified whenever playback starts playing
+   *
+   * @property onPlay
+   * @type {EventEmitter}
+   */
+  @Output() onPlay = new EventEmitter<ITrackConstraint>();
+
   private _audioTrack: IAudioTrack;
 
   constructor(private _audioProvider: AudioProvider) {}
